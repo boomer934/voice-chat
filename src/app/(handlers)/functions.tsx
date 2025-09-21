@@ -36,3 +36,11 @@ export async function handleSubmit(
     )
   }
 }
+
+// export async function createTranscription(){
+//   try {
+//     const res = await axios.post("/api/transcription")
+//   } catch (error) {
+//     console.error(error)
+//   }
+// }
