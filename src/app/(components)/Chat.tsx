@@ -15,9 +15,9 @@ export default function Chat() {
   },[messages])
   return (
     <>
-    <div className='flex flex-col w-full h-full p-3 pt-20 pb-20 overflow-y-auto overflow-x-hidden'>
+      <div className='flex flex-col w-full h-full p-3 overflow-y-auto overflow-x-hidden' style={{paddingTop: 'calc(4rem + env(safe-area-inset-top) + 0.75rem)', paddingBottom: '5.75rem'}}>
       {/* Contenuto della chat */}
-      <div className='w-full flex-1 max-w-lg mx-auto min-w-0 pt-[15px]'>
+      <div className='w-full flex-1 max-w-lg mx-auto min-w-0'>
         <div className="flex flex-col w-full h-full min-w-0">
           {messages.length === 0 &&(
             <div className='flex flex-col gap-5 flex-1 justify-center items-center w-full'>
