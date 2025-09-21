@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     }
     const response = await client.responses.create({
       model: "openai/gpt-oss-20b",
-      input: message
+      input: message,
     });
     console.log("API response:", response.output_text);
     // ritorna la risposta al client

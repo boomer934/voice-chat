@@ -1,9 +1,10 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+
 export default function NavBar() {
   return (
-    <div className='w-full h-16 shadow-md text-white flex items-center justify-between px-4 pt-[env(safe-area-inset-top)]'>
+    <div className='fixed top-0 left-0 right-0 w-full h-16 shadow-md text-white flex items-center justify-between px-4 pt-[env(safe-area-inset-top)] bg-white z-50'>
         <Image src={"/chatbot.avif"} alt='logo' width={60} height={60} className='rounded-full'/>
         <h1 className='text-2xl font-bold text-black'>Bibo Virtual Assistant</h1>
     </div>

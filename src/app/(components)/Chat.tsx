@@ -14,8 +14,8 @@ export default function Chat() {
     }
   },[messages])
   return (
-    // Il contenitore principale della chat
-    <div className='flex flex-col w-full h-full p-3 pt-2 pb-20 overflow-y-auto overflow-x-hidden'>
+    <>
+    <div className='flex flex-col w-full h-full p-3 pt-20 pb-20 overflow-y-auto overflow-x-hidden'>
       {/* Contenuto della chat */}
       <div className='w-full flex-1 max-w-lg mx-auto min-w-0'>
         <div className="flex flex-col w-full h-full min-w-0">
@@ -63,7 +63,7 @@ export default function Chat() {
         </div>
       </div>
       <div ref={ref}></div>
+      </div>
       <SearchBar input={input} setInput={setInput} messages={messages} setMessages={setMessages}/>
-    </div>
-  )
+  </>)
 }

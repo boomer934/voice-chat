@@ -14,7 +14,7 @@ export default function SearchBar({input,setInput,messages,setMessages}:SearchBa
         onKeyDown={(e)=>{if(e.key==="Enter")handleSubmit(input,setInput,setMessages)}}
         type="text" 
         name="search" 
-        className='bg-slate-200 rounded-xl m-3 p-1 outline-none'/>
+        className='bg-slate-200 rounded-xl m-3 px-5 py-2 outline-none'/>
         {/* <button onClick={()=>createTranscription()}><MicIcon /></button> */}
         <button 
         type="submit"
