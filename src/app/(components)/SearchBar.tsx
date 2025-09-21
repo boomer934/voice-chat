@@ -7,7 +7,7 @@ import type { SearchBarProps } from '../(handlers)/types'
 
 export default function SearchBar({input,setInput,messages,setMessages}:SearchBarProps) {
   return (
-    <div className='flex flex-row'>
+    <div className='flex flex-row fixed bottom-0 w-full z-50 justify-center bg-gradient-to-b from-transparent via-white to-white'>
         <input 
         value={input}
         onChange={(e)=>setInput(e.target.value)}

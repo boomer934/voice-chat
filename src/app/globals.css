@@ -27,3 +27,57 @@ html, body {
     transform: translateX(100%);
   }  
 }
+/* Previeni overflow orizzontale su tutto il body */
+body {
+  overflow-x: hidden;
+}
+
+/* Assicurati che gli elementi non escano dal viewport */
+* {
+  box-sizing: border-box;
+}
+
+/* Stili specifici per le tabelle nelle chat */
+.prose-table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.prose-table-wrapper table {
+  width: auto;
+  min-width: max-content;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0.5rem;
+}
+
+/* Stili per la scrollbar delle tabelle */
+.prose-table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.prose-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.prose-table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.prose-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Prevenire overflow per tutti i contenuti di testo */
+.chat-content {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}

@@ -24,7 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html 
-    lang="en">
+    lang="en"
+    className="max-w-[100vw]">
       <head>
         <meta
           name="viewport"
@@ -32,7 +33,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col sm:items-center `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col sm:items-center max-w-screen `}
       >
         <NavBar/>
         {children}
