@@ -16,6 +16,9 @@ export default function TypeSpeed({text,speed,typeFontText}:TextProps) {
         },speed)
     },[text,speed])
     return (
-    <ReactMarkdown className={` whitespace-pre-wrap ${typeFontText === "title" ? "font-bold text-xl" : "font-normal"}`}>{typeText}</ReactMarkdown>
+    <div className={`whitespace-pre-wrap ${typeFontText === "title" ? "font-bold text-xl" : "font-normal"}`}>
+        <ReactMarkdown>{typeText}</ReactMarkdown>
+    </div>
+
   )
 }
