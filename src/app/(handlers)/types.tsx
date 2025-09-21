@@ -15,3 +15,9 @@ export type SearchBarProps = {
     messages:Message[],
     setMessages:React.Dispatch<React.SetStateAction<Message[]>>,
 }
+
+export type TextProps={
+    text:string,
+    speed:number,
+    typeFontText: "title" | "paragraph"
+}
