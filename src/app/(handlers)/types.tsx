@@ -5,7 +5,8 @@ export type IsOpenState = {
 
 export type Message={
     role:string,
-    content:string
+    content:string,
+    loading:boolean
 }
 
 export type SearchBarProps = {
@@ -13,6 +14,4 @@ export type SearchBarProps = {
     setInput:React.Dispatch<React.SetStateAction<string>>,
     messages:Message[],
     setMessages:React.Dispatch<React.SetStateAction<Message[]>>,
-    loading?:boolean,
-    setLoading?:React.Dispatch<React.SetStateAction<boolean>>
 }

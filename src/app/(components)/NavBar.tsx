@@ -1,18 +1,11 @@
 "use client"
-import React, { useState } from 'react'
-import { MenuIcon } from 'lucide-react'
-import SideBar from './SideBar'
+import React from 'react'
+import Image from 'next/image'
 export default function NavBar() {
-    const [isOpen,setIsOpen] = useState<boolean>(false)
   return (
-    <div className='w-full h-16 bg-gray-800 text-white flex items-center justify-between px-4'>
-        <h2>LOGO</h2>
-        <MenuIcon
-        onClick={()=>setIsOpen(prev=>!prev)}
-        className='w-6 h-6'/>
-        {isOpen && (
-            <SideBar isOpen={isOpen} setIsOpen={setIsOpen}/>
-        )}
+    <div className='w-full h-16 shadow-md text-white flex items-center justify-between px-4'>
+        <Image src={"/chatbot.avif"} alt='logo' width={40} height={40} className='rounded-full'/>
+        <h1 className='text-2xl font-bold text-black'>Bibo Virtual Assistant</h1>
     </div>
   )
 }
