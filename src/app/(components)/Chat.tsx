@@ -51,7 +51,7 @@ export default function Chat() {
                 <div className="h-7 w-32 bg-slate-200 animate-pulse rounded-xl"></div>
               </div>
             ) : msg.role === "assistant" ? (
-              <TypeSpeed text={msg.content} speed={27} typeFontText='paragraph' />
+              <TypeSpeed text={msg.content} speed={20} typeFontText='paragraph' />
             ):(
               <p>{msg.content}</p>
             )}
