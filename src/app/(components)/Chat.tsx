@@ -2,7 +2,6 @@
 import React ,{ useEffect, useRef, useState }from 'react'
 import SearchBar from './SearchBar'
 import Image from 'next/image'
-import ReactMarkdown from 'react-markdown'
 import TypeSpeed from './TypeSpeed'
 
 
@@ -18,7 +17,7 @@ export default function Chat() {
   return (
     <div className='flex flex-col items-center justify-end  w-full h-full p-3 overflow-y-auto'>
     <div className='w-full flex-1'>
-      <div className="flex flex-col w-full h-full">
+      <div className="flex flex-col w-full h-full ">
         {messages.length === 0 &&(
           <div className='flex flex-col gap-5 flex-1 justify-center items-center w-full'>
             <Image src="/chatbot.avif" alt="logo" width={200} height={200} className="shadow-md rounded-full" />
@@ -39,8 +38,8 @@ export default function Chat() {
               <Image
                 src="/chatbot.avif"
                 alt="logo"
-                width={30}
-                height={30}
+                width={35}
+                height={35}
                 className="rounded-full shadow-md mb-1"
               />
             )}
